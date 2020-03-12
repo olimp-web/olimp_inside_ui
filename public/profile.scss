@@ -1,0 +1,38 @@
+@import "../scss/header/header.scss";
+@import "../scss/header/logo/logo.scss";
+@import "../scss/header/nav/nav.scss";
+@import "../scss/header/profile-menu/profile-menu.scss";
+@import "../scss/header/profile-menu/popup-menu/poppup-menu.scss";
+@import "../scss/text/text.scss";
+@import "../scss/main/main.scss";
+.profile-menu__photo{
+    background-image: url(../image/avatar.png);
+}
+.profile-menu__anim{
+    background-image: url(../image/Shape.png);
+}
+
+.article{
+    width: 94%;
+}
+
+
+.profile-main{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.profile-main_white{
+    background-color: white;
+}
+
+.profile-main__photo{
+    background-image: url(../image/main-avatar.png);
+    background-repeat: no-repeat;
+    width: 240px;
+    height: 360px;
+    margin: 30px;
+}
+

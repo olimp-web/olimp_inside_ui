@@ -1,0 +1,30 @@
+@mixin font($size,$weight,$color: #000000){
+        font-family: Roboto;
+        font-style: normal;
+        font-size: $size;
+        font-weight: $weight;
+        text-align: center;
+        color: $color;
+    }
+.member-card__name{
+    @include font(24px,normal);
+}
+.text{
+    letter-spacing: 0.15px;
+    @include font(20px,normal,#FFFFFF);
+}
+.text2{
+    letter-spacing: 0.5px;
+    @include font(20px,normal, #303C42);
+}
+.text__tegs{
+    @include font(16px,normal, #303C42);
+    letter-spacing: 0.5px;
+}
+.member-card__geo > p:first-child{
+    @include font(12px,300);
+    
+}
+.member-card__cab > p{
+    @include font(12px,500);
+}

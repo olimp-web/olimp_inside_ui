@@ -1,0 +1,29 @@
+.popup-menu_hidden{
+    display: none !important;
+}
+.popup-menu{
+    width: 210px;
+    height: 140px;
+    position: absolute;
+    top: 65px;
+    left: 30px;
+}
+.popup-menu_theme{
+    background-color: #C4D8D8;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.popup-menu__item{
+    text-decoration: none;
+    margin-left: 20px;
+}
+.popup-menu__item_active{
+    display: block;
+    width: 70%;
+    text-align: left;
+    border-bottom: solid 1px rgba(56, 70, 77, 0.4);
+    padding-bottom: 3px;
+    margin-bottom: 5px;
+}
