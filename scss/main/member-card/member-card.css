@@ -1,0 +1,78 @@
+.member-card {
+  width: 325px;
+  height: 430px;
+  background: #FFFFFF;
+  border-radius: 4px;
+  margin: 30px;
+  position: relative; }
+
+.member-card__photo {
+  width: 140px;
+  height: 140px;
+  border-radius: 140px;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5); }
+
+.member-card__photo_1 {
+  background-image: url(../image/photo4.png); }
+
+.member-card__photo_2 {
+  background-image: url(../image/photo3.png); }
+
+.member-card__photo_3 {
+  background-image: url(../image/photo2.png); }
+
+.member-card__photo_4 {
+  background-image: url(../image/photo1.png); }
+
+.member-card__photo_5 {
+  background-image: url(../image/photo6.png); }
+
+.member-card__photo_6 {
+  background-image: url(../image/photo5.png); }
+
+.center {
+  margin-left: auto;
+  margin-right: auto; }
+
+.geo {
+  position: absolute;
+  left: -20px;
+  background-image: url(../image/Vector-1.svg);
+  background-repeat: no-repeat;
+  height: 16px;
+  width: 12px; }
+
+.geo div {
+  position: absolute;
+  top: 4px;
+  left: 3px;
+  background-image: url(../image/Vector.svg);
+  background-repeat: no-repeat;
+  height: 4px;
+  width: 5px; }
+
+.member-card__geo {
+  text-align: center; }
+
+.member-card__cab {
+  margin-top: 10px;
+  display: inline-block; }
+
+.member-card__cab {
+  position: relative; }
+
+hr {
+  color: #37464b;
+  position: absolute;
+  bottom: 72px;
+  width: 23%;
+  margin-left: 38.5%; }
+
+/*# sourceMappingURL=member-card.css.map */

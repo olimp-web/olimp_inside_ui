@@ -1,0 +1,21 @@
+nav {
+  flex-grow: 2;
+  display: flex;
+  align-items: center; }
+
+.nav {
+  margin-left: 10px;
+  margin-right: 0;
+  display: flex;
+  width: 100%;
+  max-width: 600px;
+  justify-content: space-between; }
+
+.nav__item {
+  list-style-type: none;
+  max-width: 160px; }
+
+.nav__item:hover {
+  cursor: pointer; }
+
+/*# sourceMappingURL=nav.css.map */

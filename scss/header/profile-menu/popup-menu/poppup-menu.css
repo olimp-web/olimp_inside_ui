@@ -1,0 +1,40 @@
+.popup-menu_hidden {
+  display: none !important; }
+
+.popup-menu {
+  width: 210px;
+  height: 140px;
+  position: absolute;
+  top: 65px;
+  right: 40px;
+  z-index: 1;
+  padding: 10px 0; }
+
+.popup-menu_theme {
+  background-color: #C4D8D8;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around; }
+
+.popup-menu__item {
+  text-decoration: none;
+  margin-left: 20px; }
+
+.popup-menu__item_active {
+  display: block;
+  width: 80%;
+  border-bottom: solid 1px rgba(56, 70, 77, 0.4);
+  padding-bottom: 7px; }
+
+.popup-menu__triangle {
+  position: absolute;
+  right: 10px;
+  top: -8px;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 12px solid #C4D8D8; }
+
+/*# sourceMappingURL=poppup-menu.css.map */

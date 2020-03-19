@@ -1,3 +1,11 @@
+@font-face {
+	font-family: "Roboto";
+	src: url("../../fonts/Roboto.eot?") format("eot"),
+		 url("../../fonts/Roboto.woff2") format("woff2"),
+		 url("../../fonts/Roboto.woff") format("woff"),
+		 url("../../fonts/Roboto.ttf") format("truetype"),
+		 url("../../fonts/Roboto.svg#Roboto") format("svg");
+}
 @mixin font($size,$weight,$color: #000000){
         font-family: Roboto;
         font-style: normal;
@@ -15,16 +23,13 @@
 }
 .text2{
     letter-spacing: 0.5px;
-    @include font(20px,normal, #303C42);
-}
-.text__tegs{
     @include font(16px,normal, #303C42);
-    letter-spacing: 0.5px;
+    text-align: left;
 }
 .member-card__geo > p:first-child{
-    @include font(12px,300);
+    @include font(14px,normal);
     
 }
-.member-card__cab > p{
-    @include font(12px,500);
+.member-card__cab {
+    @include font(16px,normal);
 }

@@ -1,6 +1,6 @@
 .member-card{
-    min-width: 325px;
-    min-height: 430px;
+    width: 325px;
+    height: 430px;
     background: #FFFFFF;
     border-radius: 4px;
     margin: 30px;
@@ -38,7 +38,7 @@
     background-image: url(../image/photo5.png);
 }
 .member-card__about{
-    margin-bottom: 30px;
+    
 }
 .center{
     margin-left: auto;
@@ -46,7 +46,7 @@
 }
 .geo{
     position: absolute;
-    left: 120px;
+    left: -20px;
     background-image: url(../image/Vector-1.svg);
     background-repeat: no-repeat;
     height: 16px;
@@ -61,42 +61,20 @@
     height: 4px;
     width: 5px;
 }
-.member-card__cab > p{
+.member-card__geo{
+    text-align: center;
+}
+.member-card__cab{
     margin-top: 10px;
-    display: block;
+    display: inline-block;
 }
 .member-card__cab{
     position: relative;
 }
-.member-card__tegs{
-    text-align: center;
-    margin-bottom: 50px;
-}
-.member-card__teg{
-    display: inline-block;
-    border: 1px solid #C4D8D8;
-    border-radius: 4px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-}
-.member-card__teg-other{
-    background: #C4D8D8;
-}
-.button{
-    display: block;
-    vertical-align: middle;
-}
-.member-card__button{
-    color: black !important;
-    text-transform: uppercase;
-    height: 72px;
-    line-height: 72px;
-}
-hr{
-    display: block;
+hr {
+    color: #37464b;
     position: absolute;
     bottom: 72px;
-    left: 122.5px;
-}
+    width: 23%;
+    margin-left: 38.5%;
+   }

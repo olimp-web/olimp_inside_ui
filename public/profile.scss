@@ -5,6 +5,7 @@
 @import "../scss/header/profile-menu/popup-menu/poppup-menu.scss";
 @import "../scss/text/text.scss";
 @import "../scss/main/main.scss";
+@import "../scss/main/member-card/member-card.scss";
 .profile-menu__photo{
     background-image: url(../image/avatar.png);
 }
@@ -36,3 +37,25 @@
     margin: 30px;
 }
 
+.profile-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.profile-info__edu{
+    display: flex;
+    justify-content: space-between;
+}
+.profile-info__hobby{
+    display: flex;
+    justify-content: space-between;
+}
+.profile-info__prof{
+    display: flex;
+    justify-content: space-between;
+}
+.answer{
+    width: 800px;
+}
