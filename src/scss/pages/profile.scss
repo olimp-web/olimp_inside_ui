@@ -1,0 +1,61 @@
+@import "../header/header";
+@import "../header/logo/logo";
+@import "../header/nav/nav";
+@import "../header/profile-menu/profile-menu";
+@import "../header/profile-menu/popup-menu/poppup-menu";
+@import "../text/text";
+@import "../main/main";
+@import "../main/member-card/member-card";
+.profile-menu__photo{
+    background-image: url(../../images/avatar.png);
+}
+.profile-menu__anim{
+    background-image: url(../../images/Shape.png);
+}
+
+.article{
+    width: 94%;
+}
+
+
+.profile-main{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.profile-main_white{
+    background-color: white;
+}
+
+.profile-main__photo{
+    background-image: url(../../images/main-avatar.png);
+    background-repeat: no-repeat;
+    width: 240px;
+    height: 360px;
+    margin: 30px;
+}
+
+.profile-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.profile-info__edu{
+    display: flex;
+    justify-content: space-between;
+}
+.profile-info__hobby{
+    display: flex;
+    justify-content: space-between;
+}
+.profile-info__prof{
+    display: flex;
+    justify-content: space-between;
+}
+.answer{
+    width: 800px;
+}

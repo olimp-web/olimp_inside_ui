@@ -1,12 +1,12 @@
 {
-  "name": "olimp_inside",
-  "version": "1.0.0",
+  "name": "olimp_inside_ui",
+  "version": "0.0.0",
   "description": "Olimp inside gulp.js test",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/olimp-web/olimp_inside_ui.git"
   },
-  "author": "Kirill",
+  "author": "Improve Studio Junior",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/olimp-web/olimp_inside_ui/issues"
@@ -14,8 +14,15 @@
   "homepage": "https://github.com/olimp-web/olimp_inside_ui#readme",
   "devDependencies": {
     "browser-sync": "^2.26.7",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",
-    "gulp-rename": "^2.0.0"
-  }
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.0.2"
+  },
+  "main": "index.html",
+  "dependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "optionalDependencies": {}
 }

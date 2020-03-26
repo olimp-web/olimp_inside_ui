@@ -1,0 +1,19 @@
+.login-card{
+  width: 500px;
+
+  &__logo{
+    width: 100%;
+    display: block;
+    > img {
+      width: 420px;
+      height: auto;
+      margin: auto;
+      display: block;
+    }
+  }
+}
+
+.auth-bg{
+  background: url("/static/images/auth_background.jpg");
+  background-size: cover;
+}

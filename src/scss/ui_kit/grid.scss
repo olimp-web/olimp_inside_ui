@@ -1,0 +1,10 @@
+.wrapper{
+    display: flex;
+    height: 100vh;
+
+    &--single-card{
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+    }
+}

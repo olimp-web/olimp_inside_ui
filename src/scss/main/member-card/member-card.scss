@@ -1,0 +1,70 @@
+.member-card{
+    width: 325px;
+    //height: 430px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    margin: 30px;
+    position: relative;
+    padding-bottom: 72px;
+
+    &__position,
+    &__name {
+        margin: 10px 0 0;
+        line-height: 1.1rem;
+    }
+
+    .tags{
+        margin-top: 25px;
+    }
+}
+.member-card__photo{
+    width: 140px;
+    height: 140px;
+    border-radius: 140px;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+}
+
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.geo{
+    position: absolute;
+    left: -20px;
+    background-image: url("/static/images/geo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    height: 17px;
+    width: 12px;
+}
+.member-card__geo{
+    text-align: center;
+}
+.member-card__cab{
+    margin-top: 10px;
+    display: inline-block;
+}
+.member-card__cab{
+    position: relative;
+}
+hr {
+    color: #37464b;
+    position: absolute;
+    bottom: 72px;
+    width: 23%;
+    margin-left: 38.5%;
+   }
+.button{
+    color: #303C42;
+}

@@ -1,0 +1,48 @@
+.field{
+  background: $form-field-bg-color;
+  border-radius: 4px;
+  border: 2px solid $form-field-bg-color;
+  padding: .5rem;
+  font-size: 1.1rem;
+  box-sizing: border-box;
+  width: 100%;
+
+  &::placeholder{
+    color: $placeholder-color;
+  }
+
+  &--active, &:focus {
+    border-color: $btn-main-color;
+    outline: none;
+  }
+}
+
+.form{
+
+  &__errors {
+    color: $error-text-color;
+    > ul {
+      list-style: none;
+      padding: 0;
+    }
+  }
+}
+
+.field-group{
+  display: block;
+}
+
+.field:focus ~ .field-label{
+  color: $main-bg-color;
+}
+
+.field-label{
+  display: block;
+  margin: 10px 0 8px;
+}
+
+.action-row{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
