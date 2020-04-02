@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Active members</title>
-    <link rel="stylesheet" href="src/scss/pages/active.members.css">
+    <link rel="stylesheet" href="public/css/main.css">
     
   </head>
     <body>
@@ -43,7 +43,7 @@
         <main class="main center">
             <article class="block center">
                 <div class="name-of-block_left text__name-of-block">Личная информация:</div>
-                <div class="name-of-block_right">Редактировать</div>
+                <a href="#" class="name-of-block_right text__edit-of-block">Редактировать</a>
                 <section class="profile-main profile-main_white">
                     <div class="block-for-photo">
                         <img class="profile-main__photo center" src="src/images/main-avatar.png">
@@ -63,12 +63,12 @@
                                 <div class="pofile-info__type">
                                     Интересы:
                                 </div>
-                                <div class="pofile-info__tags answer tags">
-                                    <div class="tag-profile tag tag-other text__tags">3D Animation</div>
-                                    <div class="tag-profile tag tag-other text__tags">Unity</div>
-                                    <div class="tag-profile tag tag-other text__tags">C#</div>
-                                    <div class="tag-profile tag tag-other text__tags">Design</div>
-                                    <div class="tag-profile tag tag-other text__tags">AR</div>
+                                <div class="pofile-info__tags answer">
+                                    <div class="tag_profile tag tag_other text__tags">3D Animation</div>
+                                    <div class="tag_profile tag tag_other text__tags">Unity</div>
+                                    <div class="tag_profile tag tag_other text__tags">C#</div>
+                                    <div class="tag_profile tag tag_other text__tags">Design</div>
+                                    <div class="tag_profile tag tag_other text__tags">AR</div>
                                 </div>
                             </div>
                         </div>
@@ -77,105 +77,219 @@
             </article>
             <article class="article article_white">
                 <div class="name-of-block_left text__name-of-block">Навыки:</div>
-                <div class="name-of-block_right">Добавить навыки</div>
+                <a href="#" class="name-of-block_right text__edit-of-block">Добавить навыки<div class="add-something"></div></a>
                 <section class="skill">
                     <div class="skill__level-line"><p>Программирование</p><div></div></div>
-                    <div class="skill__level-number">7/10 <div class="skill__info"></div></div>
-                    <div class="skill__anim"><div class="center"></div></div>
-                    <div class="skill__more-skills">
+                    <div class="skill__level-number">7/10 
+                        <div class="skill__info">
+                            <div class="popup-menu__info popup-menu_theme"><p>Информация об уровне знания скила</p><div class="popup-menu__triangle"></div></div>
+                        </div>
+                    </div>
+                    <div class="skill__anim skill__anim_nom1-1"><div class="center skill__anim_pic1"></div></div>
+                </section>
+                <section class="skill__more-skills skill__more-skills_nom1-1">
                         <p class="skill__about-user-skill">Тут небольшой текст от пользователя о том, что он знает, что только начал изучать и тд</p>
                         <div class="skill">
                             <div class="skill__level-line"><p>Программирование</p><div></div></div>
-                            <div class="skill__level-number">7/10 <div class="skill__info"></div></div>
-                            <div class="skill__anim"><div class="center"></div></div>
-                            <div class="skill__more-skills">
-                                <div class="skill">
-                                    <div class="skill__level-line"><p>Программирование</p><div></div></div>
-                                    <div class="skill__level-number">7/10 <div class="skill__info"></div></div>
+                            <div class="skill__level-number">7/10 
+                                <div class="skill__info">
+                                    <div class="popup-menu__info popup-menu_theme">
+                                        <p>Информация об уровне знания скила</p>
+                                        <div class="popup-menu__triangle"></div>
+                                    </div>
                                 </div>
                             </div>
+                            <div class="skill__anim skill__anim_nom1-2"><div class="center skill__anim_pic2"></div></div>
+                        </div>
+                        <div class="skill__more-skills skill__more-skills_nom1-2">
+                                <div class="skill">
+                                    <div class="skill__level-line"><p>Программирование</p><div></div></div>
+                                    <div class="skill__level-number">7/10 
+                                        <div class="skill__info">
+                                            <div class="popup-menu__info popup-menu_theme">
+                                                <p>Информация об уровне знания скила</p>
+                                                <div class="popup-menu__triangle"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="skill__anim"><div class="center hidden__anim"></div></div>
+                                </div>
                         </div>                       
                         <div class="skill">
                             <div class="skill__level-line"><p>Программирование</p><div></div></div>
-                            <div class="skill__level-number">7/10 <div class="skill__info"></div></div>
-                            <div class="skill__anim"><div class="center"></div></div>
-                            <div class="skill__more-skills">
+                            <div class="skill__level-number">7/10 
+                                <div class="skill__info">
+                                    <div class="popup-menu__info popup-menu_theme">
+                                        <p>Информация об уровне знания скила</p>
+                                        <div class="popup-menu__triangle"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill__anim skill__anim_nom1-3"><div class="center skill__anim_pic3"></div></div>
+                        </div>
+                        <div class="skill__more-skills skill__more-skills_nom1-3">
                                 <div class="skill">
                                     <div class="skill__level-line"><p>Программирование</p><div></div></div>
-                                    <div class="skill__level-number">7/10 <div class="skill__info"></div></div>
+                                    <div class="skill__level-number">7/10 
+                                        <div class="skill__info">
+                                            <div class="popup-menu__info popup-menu_theme">
+                                                <p>Информация об уровне знания скила</p>
+                                                <div class="popup-menu__triangle"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="skill__anim"><div class="center hidden__anim"></div></div>
                                 </div>
+                        </div>
+                </section>
+
+
+
+                <section class="skill">
+                    <div class="skill__level-line"><p>Программирование</p><div></div></div>
+                    <div class="skill__level-number">7/10 
+                        <div class="skill__info">
+                            <div class="popup-menu__info popup-menu_theme">
+                                <p>Информация об уровне знания скила</p>
+                                <div class="popup-menu__triangle"></div>
                             </div>
                         </div>
                     </div>
+                    <div class="skill__anim skill__anim_nom2-1"><div class="center skill__anim_pic4"></div></div>
                 </section>
-                
-                
-                <section class="skill">
-                    <div class="skill__level-line"><p>Программирование</p><div></div></div>
-                    <div class="skill__level-number">7/10 <div class="skill__info"></div></div>
-                    <div class="skill__anim"><div class="center"></div></div>
-                    <div class="skill__more-skills">
+                <section class="skill__more-skills skill__more-skills_nom2-1">
                         <p class="skill__about-user-skill">Тут небольшой текст от пользователя о том, что он знает, что только начал изучать и тд</p>
                         <div class="skill">
                             <div class="skill__level-line"><p>Программирование</p><div></div></div>
-                            <div class="skill__level-number">7/10 <div class="skill__info"></div></div>
-                            <div class="skill__anim"><div class="center"></div></div>
-                            <div class="skill__more-skills">
-                                <div class="skill">
-                                    <div class="skill__level-line"><p>Программирование</p><div></div></div>
-                                    <div class="skill__level-number">7/10 <div class="skill__info"></div></div>
+                            <div class="skill__level-number">7/10 
+                                <div class="skill__info">
+                                    <div class="popup-menu__info popup-menu_theme">
+                                        <p>Информация об уровне знания скила</p>
+                                        <div class="popup-menu__triangle"></div>
+                                    </div>
                                 </div>
                             </div>
+                            <div class="skill__anim skill__anim_nom2-2"><div class="center skill__anim_pic5"></div></div>
                         </div>
+                        <div class="skill__more-skills skill__more-skills_nom2-2">
+                                <div class="skill">
+                                    <div class="skill__level-line"><p>Программирование</p><div></div></div>
+                                    <div class="skill__level-number">7/10 
+                                        <div class="skill__info">
+                                            <div class="popup-menu__info popup-menu_theme">
+                                                <p>Информация об уровне знания скила</p>
+                                                <div class="popup-menu__triangle"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="skill__anim"><div class="center hidden__anim"></div></div>
+                                </div>
+                        </div>                       
                         <div class="skill">
                             <div class="skill__level-line"><p>Программирование</p><div></div></div>
-                            <div class="skill__level-number">7/10 <div class="skill__info"></div></div>
-                            <div class="skill__anim"><div class="center"></div></div>
-                            <div class="skill__more-skills">
-                                <div class="skill">
-                                    <div class="skill__level-line"><p>Программирование</p><div></div></div>
-                                    <div class="skill__level-number">7/10 <div class="skill__info"></div></div>
+                            <div class="skill__level-number">7/10 
+                                <div class="skill__info">
+                                    <div class="popup-menu__info popup-menu_theme">
+                                        <p>Информация об уровне знания скила</p>
+                                        <div class="popup-menu__triangle"></div>
+                                    </div>
                                 </div>
                             </div>
+                            <div class="skill__anim skill__anim_nom2-3"><div class="center skill__anim_pic6"></div></div>
                         </div>
-                    </div>
+                        <div class="skill__more-skills skill__more-skills_nom2-3">
+                                <div class="skill">
+                                    <div class="skill__level-line"><p>Программирование</p><div></div></div>
+                                    <div class="skill__level-number">7/10 
+                                        <div class="skill__info">
+                                            <div class="popup-menu__info popup-menu_theme">
+                                                <p>Информация об уровне знания скила</p>
+                                                <div class="popup-menu__triangle"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="skill__anim"><div class="center hidden__anim"></div></div>
+                                </div>
+                        </div>
                 </section>
-                
-                
+
+
+
                 <section class="skill">
                     <div class="skill__level-line"><p>Программирование</p><div></div></div>
-                    <div class="skill__level-number">7/10 <div class="skill__info"></div></div>
-                    <div class="skill__anim"><div class="center" class="center"></div></div>
-                    <div class="skill__more-skills">
-                        <p class="skill__about-user-skill"></p>
-                        <div class="skill">
-                            <div class="skill__level-line"><p>Программирование</p><div></div></div>
-                            <div class="skill__level-number">7/10 <div class="skill__info"></div></div>
-                            <div class="skill__anim"><div class="center" ></div></div>
-                            <div class="skill__more-skills">
-                                <div class="skill">
-                                    <div class="skill__level-line"><p>Программирование</p><div></div></div>
-                                    <div class="skill__level-number">7/10 <div class="skill__info"></div></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="skill">
-                            <div class="skill__level-line"><p>Программирование</p><div></div></div>
-                            <div class="skill__level-number">7/10 <div class="skill__info"></div></div>
-                            <div class="skill__anim"><div class="center"></div></div>
-                            <div class="skill__more-skills">
-                                <div class="skill">
-                                    <div class="skill__level-line"><p>Программирование</p><div></div></div>
-                                    <div class="skill__level-number">7/10 <div class="skill__info"></div></div>
-                                </div>
+                    <div class="skill__level-number">7/10 
+                        <div class="skill__info">
+                            <div class="popup-menu__info popup-menu_theme">
+                                <p>Информация об уровне знания скила</p>
+                                <div class="popup-menu__triangle"></div>
                             </div>
                         </div>
                     </div>
+                    <div class="skill__anim skill__anim_nom3-1"><div class="center skill__anim_pic7"></div></div>
                 </section>
+                <section class="skill__more-skills skill__more-skills_nom3-1">
+                        <p class="skill__about-user-skill">Тут небольшой текст от пользователя о том, что он знает, что только начал изучать и тд</p>
+                        <div class="skill">
+                            <div class="skill__level-line"><p>Программирование</p><div></div></div>
+                            <div class="skill__level-number">7/10 
+                                <div class="skill__info">
+                                    <div class="popup-menu__info popup-menu_theme">
+                                        <p>Информация об уровне знания скила</p>
+                                        <div class="popup-menu__triangle"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill__anim skill__anim_nom3-2"><div class="center skill__anim_pic8"></div></div>
+                        </div>
+                        <div class="skill__more-skills skill__more-skills_nom3-2">
+                                <div class="skill">
+                                    <div class="skill__level-line"><p>Программирование</p><div></div></div>
+                                    <div class="skill__level-number">7/10 
+                                        <div class="skill__info">
+                                            <div class="popup-menu__info popup-menu_theme">
+                                                <p>Информация об уровне знания скила</p>
+                                                <div class="popup-menu__triangle"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="skill__anim"><div class="center hidden__anim"></div></div>
+                                </div>
+                        </div>                       
+                        <div class="skill">
+                            <div class="skill__level-line"><p>Программирование</p><div></div></div>
+                            <div class="skill__level-number">7/10 
+                                <div class="skill__info">
+                                    <div class="popup-menu__info popup-menu_theme">
+                                        <p>Информация об уровне знания скила</p>
+                                        <div class="popup-menu__triangle"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill__anim skill__anim_nom3-3"><div class="center skill__anim_pic9"></div></div>
+                        </div>
+                        <div class="skill__more-skills skill__more-skills_nom3-3">
+                                <div class="skill">
+                                    <div class="skill__level-line"><p>Программирование</p><div></div></div>
+                                    <div class="skill__level-number">7/10 
+                                        <div class="skill__info">
+                                            <div class="popup-menu__info popup-menu_theme">
+                                                <p>Информация об уровне знания скила</p>
+                                                <div class="popup-menu__triangle"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="skill__anim"><div class="center hidden__anim"></div></div>
+                                </div>
+                        </div>
+                </section>
+
+
+                
+                
             </article>
             <article class="article">
                 <div class="name-of-block_left text__name-of-block">Проекты</div>
-                <div class="name-of-block_right">Добавить проекты</div>
+                <a href="#" class="name-of-block_right text__edit-of-block">Добавить проекты<div class="add-something"></div></a>
                 <div class="type-of-projects">
                     <div class="type-of-projects__now type-of-projects_active text__type-of-projects">Текущее</div>
                     <div class="type-of-projects__finished text__type-of-projects">Завершенные</div>
@@ -202,10 +316,11 @@
                         </div>
                         <p class="project__text text__tags">Project Resistance — это проект во вселенной Resident Evil (Обитель зла) от компании Capcom, представляющий собой хоррор/шутер с ассиметричным мультиплеером. Вы можете выступать как в качестве одного из четырёх выживших, так и в качестве мастера разума. </p>
                     </div>
-                    <div class="project__like text__tags"><span>Оценить проект</span><div></div></div>
-                    <div class="project__hide text__tags"><span>Скрыть проект</span><div></div></div>
+                    <div class="project__like text__tags_bold"><span>Оценить проект</span><div></div></div>
+                    <div class="project__hide text__tags_bold"><span>Скрыть проект</span><div></div></div>
                 </div>
             </article>
         </main>
+        <script src="js/script.js"></script>
     </body>
 </html>

@@ -1,3 +1,4 @@
+@import "text/text";
 @import "ui_kit/exports";
 
 @import "header/header";
@@ -7,8 +8,10 @@
 @import "header/profile-menu/popup-menu/poppup-menu";
 @import "main/main";
 @import "main/member-card/member-card";
-@import "text/text";
 @import "main/profile-main/profile-main";
+@import "main/skills-list/skill";
+@import "main/project-info/project-info";
+@import "main/project/project";
 
 @import "blocks/toolbars";
 

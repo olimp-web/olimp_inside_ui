@@ -1,7 +1,6 @@
 const { src, dest, parallel, watch } = require('gulp');
 const sass = require('gulp-sass');
 
-
 function build_css() {
     return src("src/scss/*.scss")
         .pipe(sass())

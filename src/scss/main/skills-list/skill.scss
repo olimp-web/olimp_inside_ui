@@ -1,0 +1,108 @@
+.skill{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 160px;
+    background-color: #F4F3FE;
+    padding: 0 20px 0 0;
+    padding-left:$margin-left;
+    margin-bottom: 5px;
+    position: relative;
+}
+.skill__level-line{
+    position: relative;
+    height: 45px;
+    flex-grow: 6;
+    background-color: #303C42;
+}
+.skill__level-line div{
+    height: 45px;
+    width: 70%;
+    background-color: #25AE88;
+}
+.skill__level-line > p{
+    position: absolute;
+    left: 0;
+    top: -45px;
+}
+.skill__level-number{
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+.skill__info{
+    width: 21px;
+    height: 20px;
+    background-image: url("../images/icons.svg");
+    background-repeat: no-repeat;
+    background-position: -41px 0px;
+    background-size: 300px;
+    margin-left: 10px;
+    position: relative;
+}
+.skill__anim{
+    flex-grow: 1;
+}
+.skill__anim div{
+    width: 45px;
+    height: 45px;
+    background-image: url("../images/icons.svg");
+    background-repeat: no-repeat;
+    background-position: -340px -80px;
+    -moz-transform: rotate(90deg); /* Для Firefox */
+    -ms-transform: rotate(90deg); /* Для IE */
+    -webkit-transform: rotate(90deg); /* Для Safari, Chrome, iOS */
+    -o-transform: rotate(90deg); /* Для Opera */
+    transform: rotate(90deg);
+    transition: transform 0.5s;
+    transform-origin: 18px 24px;
+}
+.skill .skill__anim_pic1-active{
+    @include anim();
+}
+.skill .skill__anim_pic2-active{
+    @include anim();
+}
+.skill .skill__anim_pic3-active{
+    @include anim();
+}
+.skill .skill__anim_pic4-active{
+    @include anim();
+}
+.skill .skill__anim_pic5-active{
+    @include anim();
+}
+.skill .skill__anim_pic6-active{
+    @include anim();
+}
+.skill .skill__anim_pic7-active{
+     @include anim();
+ }
+.skill .skill__anim_pic8-active{
+    @include anim();
+}
+.skill .skill__anim_pic9-active{
+    @include anim();
+}
+.hidden__anim{
+    background-image: none!important;
+}
+.skill__more-skills{
+    display: none;
+    padding-left: 0;
+}
+.skill__more-skills_appear{
+    opacity: 1;
+    margin-left: 0;
+    transition: opacity 0.3s, visibility 0s linear 0.3s;
+}
+.skill__more-skills{
+    background-color: white;
+    .skill{
+        background-color: white;
+    }
+    >p{
+        margin-left: $margin-left;
+        margin-top: 35px;
+    }
+}

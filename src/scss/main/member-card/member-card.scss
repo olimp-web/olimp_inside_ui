@@ -1,6 +1,6 @@
 .member-card{
     width: 325px;
-    //height: 430px;
+    height: 430px;
     background: #FFFFFF;
     border-radius: 4px;
     margin: 30px;
@@ -14,7 +14,7 @@
     }
 
     .tags{
-        margin-top: 25px;
+        margin-top: 20px;
     }
 }
 .member-card__photo{
@@ -39,7 +39,7 @@
 .geo{
     position: absolute;
     left: -20px;
-    background-image: url("/static/images/geo.png");
+    background-image: url("../images/geo.png");
     background-repeat: no-repeat;
     background-size: cover;
     -webkit-background-size: cover;
