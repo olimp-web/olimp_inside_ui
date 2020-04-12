@@ -99,8 +99,11 @@
     align-items: center;
 }
 .pofile-info__tags{
-    height: 100%;
-    
+    padding: 0;
+    flex-wrap: wrap;
+    display:-moz-box; /* Firefox */
+    display:-webkit-box; /* Safari и Chrome */
+    display:box;
 }
 .answer{
     width: 75%;

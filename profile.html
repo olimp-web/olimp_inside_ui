@@ -43,7 +43,7 @@
         <main class="main center">
             <article class="block center">
                 <div class="name-of-block_left text__name-of-block">Личная информация:</div>
-                <a href="#" class="name-of-block_right text__edit-of-block">Редактировать</a>
+                <a href="#open-modal" class="name-of-block_right text__edit-of-block" id="on-top">Редактировать</a>
                 <section class="profile-main profile-main_white">
                     <div class="block-for-photo">
                         <img class="profile-main__photo center" src="src/images/main-avatar.png">
@@ -64,11 +64,11 @@
                                     Интересы:
                                 </div>
                                 <div class="pofile-info__tags answer">
-                                    <div class="tag_profile tag tag_other text__tags">3D Animation</div>
-                                    <div class="tag_profile tag tag_other text__tags">Unity</div>
-                                    <div class="tag_profile tag tag_other text__tags">C#</div>
-                                    <div class="tag_profile tag tag_other text__tags">Design</div>
-                                    <div class="tag_profile tag tag_other text__tags">AR</div>
+                                    <div class="tag_profile tag_other text__tags">3D Animation</div>
+                                    <div class="tag_profile tag_other text__tags">Unity</div>
+                                    <div class="tag_profile tag_other text__tags">C#</div>
+                                    <div class="tag_profile tag_other text__tags">Design</div>
+                                    <div class="tag_profile tag_other text__tags">AR</div>
                                 </div>
                             </div>
                         </div>
@@ -320,7 +320,88 @@
                     <div class="project__hide text__tags_bold"><span>Скрыть проект</span><div></div></div>
                 </div>
             </article>
+
+
+        <div class="bgr" id="open-modal">
+            <article class="edit-profile">
+                <a href="#close" title="Close" class="close close__position"></a>
+                <header class="edit-profile__header">
+                    <ul class="nav__profile-edit">
+                        <li class="nav__item_profile-edit nav__item_profile-edit_active"><a href="#" class="text__profile-edit-nav">Личная информация</a></li>
+                        <li class="nav__item_profile-edit"><a href="#" class="text__profile-edit-nav">Навыки</a></li>
+                        <li class="nav__item_profile-edit"><a href="#" class="text__profile-edit-nav">Проекты</a></li>
+                    </ul>
+                </header>
+                <main class="main__profile-edit">
+                    <div class="name-of-block_left text__users-name">Основное</div>
+                    <div class="main__left-edit">
+                        <form class:="form form__personal-info" id="edit-prf" enctype="multipart/form-data" method="post" action="#">
+                            <div>
+                                <label class="field-label form-items label-file">
+                                    <div class="form__quation">Фото:</div>
+                                    <output id="list"></output>
+                                    <input class="photo" type="file" accept="image/*" name="user-photo" id="files">
+                                </label>
+                            </div>
+                            <div>
+                                <label class="field-label form-items">
+                                    <div class="form__quation">Имя:</div>
+                                    <input class="field" type="text" name="name" placeholder="Иван">
+                                </label>
+                            </div>
+                            <div>
+                                <label class="field-label form-items">
+                                    <div class="form__quation">Фамилия</div>
+                                    <input class="field" type="text" name="surname" placeholder="Иванов">
+                                </label>
+                            </div>
+                            <div>
+                                <label class="field-label form-items">
+                                    <div class="form__quation">Отчество:</div>
+                                    <input class="field" type="text" name="middle-name" placeholder="Иванович">
+                                </label>
+                            </div>
+                            <div>
+                                <label class="field-label form-items">
+                                    <div class="form__quation">Образование:</div>
+                                    <input class="field" type="text" name="education" placeholder="ИТМО">
+                                </label>
+                            </div>
+                            <div>
+                                <label class="field-label form-items">
+                                    <div class="form__quation">Соц сети:</div>
+                                    <input class="field" type="text" name="social-network" placeholder="www.fl.ru ">
+                                </label>
+                            </div>
+                            <div>
+                                <label class="field-label form-items">
+                                    <div class="form__quation">Интересы:</div>
+                                    <textarea class="field" placeholder="Мне интересно то-то то-то" name="text" rows="4"></textarea>
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="main__right-edit">
+                        <div class="name-of-block_left text__users-name">Професиональные области:</div>
+                        <a href="#" class="name-of-block_right text__edit-of-block">Добавить еще<div class="add-something"></div></a>
+                        <p class="">Для того, чтобы поменять приоритет – перетащите навык на желаемое место. Чтобы удалить – нажмите крестик</p>
+                        <ul id="tag__block" class="pofile-info__tags">
+                            <li id="tag__1" class="tag_profile tag_other text__tags"><p>3D Animation</p><div id="tag__1-close" class="tag_profile__close"></div></li><!-- <p>3D Animation</p> -->
+                            <li id="tag__2" class="tag_profile tag_other text__tags"><p>Unity</p><div id="tag__2-close" class="tag_profile__close"></div></li><!-- <p>Unity</p> -->
+                            <li id="tag__3" class="tag_profile tag_other text__tags"><p>C#</p><div id="tag__3-close" class="tag_profile__close"></div></li><!-- <p>C#</p> -->
+                            <li id="tag__4" class="tag_profile tag_other text__tags"><p>Design</p><div id="tag__4-close" class="tag_profile__close"></div></li><!-- <p>Design</p> -->
+                            <li id="tag__5" class="tag_profile tag_other text__tags"><p>AR</p><div id="tag__5-close" class="tag_profile__close"></div></li><!-- <p>AR</p> -->
+                        </ul>
+                    </div>
+                    <input class="btn form__btn-pos" type="submit" value="Отправить" form="edit-prf">
+                </main>
+            </article>
+        </div>
         </main>
+
         <script src="js/script.js"></script>
+        <script src="js/switch-boxs.js"></script>
+        <script src="js/close-js.js"></script>
+        <script src="js/input.js"></script>
     </body>
 </html>

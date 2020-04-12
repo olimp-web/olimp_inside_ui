@@ -79,6 +79,9 @@
     letter-spacing: 0.5px;
     @include font(16px,300, #303C42);
 }
+.text__profile-edit-nav{
+  @include font(24px,normal,#303C42);
+}
 h1, .h1{
   font-size: 24px;
 }
