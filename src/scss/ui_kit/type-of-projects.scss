@@ -1,0 +1,27 @@
+.type-of-projects{
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+.type-of-projects div{
+    flex-basis: 1px;
+    flex-grow: 1;
+    text-align: center;
+    line-height: 70px;
+    border-left: 1px solid #F2F2F2;
+    background-color: white;
+}
+.type-of-projects .type-of-projects_active{
+	background-color: #265F78;
+	color: white;
+}
+.type-of-projects div:hover{
+    border: 1px solid #C4D8D8;
+    box-shadow: 0px 1px 4px #C4D8D8;
+    background-color: #E7F0F0;
+}
+.type-of-projects .type-of-projects_active:hover{
+    border: 1px solid #C4D8D8;
+    box-shadow: 0px 1px 4px #C4D8D8;
+    background-color: #265F78;
+}

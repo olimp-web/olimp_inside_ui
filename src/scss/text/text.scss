@@ -1,20 +1,28 @@
 @font-face {
-	font-family: 'Roboto';
-	src:
-            //url("/static/fonts/Roboto/Roboto-Medium.ttf.eot?#iefix") format('embedded-opentype'),
-		 //url("/static/fonts/Roboto.woff2") format("woff2"),
-		 //url("/static/fonts/Roboto.woff") format("woff"),
-		 url("/static/fonts/Roboto/Roboto-Medium.ttf") format("truetype");
-		 //url("/static/fonts/Roboto.svg#Roboto") format("svg");
-    font-weight: 400;
+    font-family: 'Roboto';
+    src:
+        //url("../fonts/Roboto-Medium.ttf.eot?#iefix") format('embedded-opentype'),
+        //url("../fonts/Roboto.woff2") format("woff2"),
+        //url("../fonts/Roboto.woff") format("woff"),
+        url("../fonts/Robotoregular.ttf") format("truetype");
+        //url("../fonts/Roboto.svg#Roboto") format("svg");
+    font-weight: normal;
     font-style: normal;
     font-stretch: normal;
 }
 
 @font-face {
   font-family: 'Roboto';
-  src: url("/static/fonts/Roboto/Roboto-Light.ttf");
+  src: url("../fonts/Robotolight.ttf");
   font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/Robotomedium.ttf");
+  font-weight: 500;
   font-style: normal;
   font-stretch: normal;
 }
@@ -59,11 +67,21 @@
     letter-spacing: 0.5px;
     @include font(16px,normal, #303C42);
 }
+.text__tags_bold{
+  letter-spacing: 0.5px;
+  @include font(16px,500, #303C42);
+}
 .text__type-of-projects{
     letter-spacing: 0.75px;
     @include font(16px,500, #303C42);
 }
-
+.text__edit-of-block{
+    letter-spacing: 0.5px;
+    @include font(16px,300, #303C42);
+}
+.text__profile-edit-nav{
+  @include font(24px,normal,#303C42);
+}
 h1, .h1{
   font-size: 24px;
 }

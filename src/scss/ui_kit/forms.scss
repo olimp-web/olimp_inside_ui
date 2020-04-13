@@ -18,7 +18,6 @@
 }
 
 .form{
-
   &__errors {
     color: $error-text-color;
     > ul {
@@ -27,15 +26,29 @@
     }
   }
 }
-
 .field-group{
   display: block;
 }
-
+.form-items{
+  display: flex!important;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+.form__personal-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.form__quation{
+  width: 135px;
+}
 .field:focus ~ .field-label{
   color: $main-bg-color;
 }
-
+.form__btn-pos{
+  position: absolute;
+  bottom: -80px;
+}
 .field-label{
   display: block;
   margin: 10px 0 8px;
@@ -45,4 +58,11 @@
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
+}
+.thumb {
+    height: 75px;
+    margin: 10px 5px 0 0;
+  }
+.label-file{
+  align-items: center;
 }

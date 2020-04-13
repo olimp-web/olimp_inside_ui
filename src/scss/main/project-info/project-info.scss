@@ -1,0 +1,24 @@
+.project-info{
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.finder-and-options{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.finder-and-options__button{
+    display: none;
+}
+.options{
+    width: 28px;
+    height: 28px;
+    background-image: url(../images/icons.svg);
+    background-repeat: no-repeat;
+    background-position: -172px 0px;
+    margin-left: 10px;
+}
