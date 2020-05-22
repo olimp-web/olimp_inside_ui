@@ -1,0 +1,23 @@
+.rate-project{
+    position: relative;
+	box-sizing: border-box;
+    background-color: white;
+    padding: 6% 10%;
+    width: 70%;
+    height: 70vh;
+    overflow-y: auto; 
+    .range{
+        width: 300px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }   
+}
+.name-of-modal__header{
+    border-bottom: 1px solid rgba(56, 70, 77, 0.4);
+    margin-bottom: 40px;
+    padding-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}

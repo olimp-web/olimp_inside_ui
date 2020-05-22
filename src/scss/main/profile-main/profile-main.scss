@@ -3,7 +3,6 @@
 //}
 .block{
     width: 100%;
-    height: 300px;
     position: relative;
     margin-top: 90px;
     margin-bottom: 80px;
@@ -47,7 +46,6 @@
     background-color: white;
 }
 .profile-main{
-    height: 300px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -88,15 +86,12 @@
 .profile-info__hobby{
     display: flex;
     justify-content: space-between;
-    height: 40px;
-    margin-bottom: 20px;
 }
 .profile-info__edu .pofile-info__type{
-    padding-top: 3px;
+    margin-top: 20px;
 }
 .profile-info__hobby .pofile-info__type{
     display: flex;
-    align-items: center;
 }
 .pofile-info__tags{
     padding: 0;

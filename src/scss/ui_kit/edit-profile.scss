@@ -52,29 +52,31 @@
 }
 
 .main__left-edit{	
-	flex-basis: 1px;
-	flex-grow: 1;
-	box-sizing: border-box;
-	padding-right: 110px;
+    box-sizing: border-box;
+    padding-right: 10%;
+    flex: 1 100 420px
 }
 .main__right-edit{
 	position: relative;
-	flex-basis: 1px;
-	flex-grow: 1;
+    flex: 1 1 420px;
 }
 .edit-profile__header{
 	margin-bottom: 100px;
 }
-.main__profile-edit{
+.main__profile-edit_info{
 	position: relative;
 	display: flex;
 	justify-content: center;
 }
 
-
-.main__left-edit{
-
+.main__profile-edit_skills{
+	position: relative;
+	display: block;
+	justify-content: center;
 }
-.main__right-edit{
 
+.main__profile-edit_projects{
+    position: relative;
+	display: block;
+	justify-content: center;
 }

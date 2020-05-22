@@ -16,7 +16,9 @@
     outline: none;
   }
 }
-
+.field_rate{
+  width: auto;
+}
 .form{
   &__errors {
     color: $error-text-color;
@@ -39,8 +41,20 @@
   flex-direction: column;
   justify-content: flex-start;
 }
+.form__rate-project{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 100%;
+}
+
 .form__quation{
   width: 135px;
+}
+.form__quation_rate{
+  width: 160px;
+  display: block;
 }
 .field:focus ~ .field-label{
   color: $main-bg-color;
@@ -49,20 +63,36 @@
   position: absolute;
   bottom: -80px;
 }
+.form__btn-pos_skills{
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-top: 40px;
+}
 .field-label{
   display: block;
   margin: 10px 0 8px;
 }
-
+.form__new-skills{
+  margin-bottom: 35px;
+}
 .action-row{
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
 }
 .thumb {
-    height: 75px;
-    margin: 10px 5px 0 0;
-  }
+  height: 75px;
+  margin: 10px 5px 0 0;
+  object-fit: contain;
+  width: 50px;
+}
 .label-file{
-  align-items: center;
+align-items: center;
+}
+.photo{
+width: 136px;
+}
+.form__quation_photo{
+width: 100px;
 }

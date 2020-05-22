@@ -27,12 +27,13 @@ nav{
     border-bottom:1px solid rgba(56, 70, 77, 0.4);;
 }
 .nav__item_profile-edit{
+    position: relative;
     list-style-type: none;
     max-width: 260px;
     margin-right: 80px;
 }
-.nav__item_profile-edit{
-    position: relative;
+.nav__item_profile-edit:hover{
+    cursor:pointer;
 }
 .nav__item_profile-edit_active::after{
     display: block;

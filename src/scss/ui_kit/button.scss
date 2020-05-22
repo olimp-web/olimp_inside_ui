@@ -35,10 +35,12 @@
     text-align: center;
     border: none;
     border-radius: 4px;
-
     &:hover{
         background: $btn-hover-color;
     }
+}
+.btn_margin-bottom{
+    margin-bottom: 10px;
 }
 
 .btn-link{
