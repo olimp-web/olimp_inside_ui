@@ -43,7 +43,7 @@
         <main class="main center">
             <article class="block center">
                 <div class="name-of-block_left text__name-of-block">Личная информация:</div>
-                <a href="#open-modal" class="name-of-block_right text__edit-of-block" id="on-top">Редактировать</a>
+                <a href="#open-modal_edit" class="name-of-block_right text__edit-of-block on-top">Редактировать</a>
                 <section class="profile-main profile-main_white">
                     <div class="block-for-photo">
                         <img class="profile-main__photo center" src="src/images/main-avatar.png">
@@ -77,7 +77,7 @@
             </article>
             <article class="article article_white">
                 <div class="name-of-block_left text__name-of-block">Навыки:</div>
-                <a href="#" class="name-of-block_right text__edit-of-block">Добавить навыки<div class="add-something"></div></a>
+                <a href="#open-modal_new-skill" class="name-of-block_right text__edit-of-block on-top">Добавить навыки<div class="add-something"></div></a>
                 <section class="skill">
                     <div class="skill__level-line"><p>Программирование</p><div></div></div>
                     <div class="skill__level-number">7/10 
@@ -283,13 +283,12 @@
                         </div>
                 </section>
 
-
                 
                 
             </article>
             <article class="article">
                 <div class="name-of-block_left text__name-of-block">Проекты</div>
-                <a href="#" class="name-of-block_right text__edit-of-block">Добавить проекты<div class="add-something"></div></a>
+                <a href="#open-modal_new-project" class="name-of-block_right text__edit-of-block on-top">Добавить проекты <div class="add-something"></div></a>
                 <div class="type-of-projects">
                     <div class="type-of-projects__now type-of-projects_active text__type-of-projects">Текущее</div>
                     <div class="type-of-projects__finished text__type-of-projects">Завершенные</div>
@@ -316,29 +315,28 @@
                         </div>
                         <p class="project__text text__tags">Project Resistance — это проект во вселенной Resident Evil (Обитель зла) от компании Capcom, представляющий собой хоррор/шутер с ассиметричным мультиплеером. Вы можете выступать как в качестве одного из четырёх выживших, так и в качестве мастера разума. </p>
                     </div>
-                    <div class="project__like text__tags_bold"><span>Оценить проект</span><div></div></div>
+                    <a href="#open-modal_rate" class="project__like text__tags_bold rate-project_btn on-top"><span>Оценить проект</span><div></div></a>
                     <div class="project__hide text__tags_bold"><span>Скрыть проект</span><div></div></div>
                 </div>
             </article>
-
-
-        <div class="bgr" id="open-modal">
+        </main>
+        <div class="bgr" id="open-modal_edit">
             <article class="edit-profile">
                 <a href="#close" title="Close" class="close close__position"></a>
                 <header class="edit-profile__header">
                     <ul class="nav__profile-edit">
-                        <li class="nav__item_profile-edit nav__item_profile-edit_active"><a href="#" class="text__profile-edit-nav">Личная информация</a></li>
-                        <li class="nav__item_profile-edit"><a href="#" class="text__profile-edit-nav">Навыки</a></li>
-                        <li class="nav__item_profile-edit"><a href="#" class="text__profile-edit-nav">Проекты</a></li>
+                        <li class="nav__item_profile-edit nav__item_profile-edit_active edit-profile__info"><div class="text__profile-edit-nav">Личная информация</div></li>
+                        <li class="nav__item_profile-edit edit-profile__skills"><div class="text__profile-edit-nav">Навыки</div></li>
+                        <li class="nav__item_profile-edit edit-profile__projects"><div class="text__profile-edit-nav">Проекты</div></li>
                     </ul>
                 </header>
-                <main class="main__profile-edit">
+                <main class="main__profile-edit_info">
                     <div class="name-of-block_left text__users-name">Основное</div>
                     <div class="main__left-edit">
                         <form class:="form form__personal-info" id="edit-prf" enctype="multipart/form-data" method="post" action="#">
                             <div>
                                 <label class="field-label form-items label-file">
-                                    <div class="form__quation">Фото:</div>
+                                    <div class="form__quation_photo">Фото:</div>
                                     <output id="list"></output>
                                     <input class="photo" type="file" accept="image/*" name="user-photo" id="files">
                                 </label>
@@ -393,15 +391,115 @@
                             <li id="tag__5" class="tag_profile tag_other text__tags"><p>AR</p><div id="tag__5-close" class="tag_profile__close"></div></li><!-- <p>AR</p> -->
                         </ul>
                     </div>
-                    <input class="btn form__btn-pos" type="submit" value="Отправить" form="edit-prf">
+                    <input class="btn form__btn-pos btn_margin-bottom" type="submit" value="Отправить" form="edit-prf">
+                </main>
+                <main class="main__profile-edit_skills hidden">
+                    <a href="#" class="name-of-block_right text__edit-of-block">Добавить еще<div class="add-something"></div></a>
+                    <div class="skill__level-line skill__level-line_edit"><p>Программирование 7/10</p><div></div></div>
+                    <input class="btn form__btn-pos_skills btn_margin-bottom" type="submit" value="Отправить" form="edit-prf">
+                </main>
+                <main class="main__profile-edit_projects hidden">
+                    <a href="#" class="name-of-block_right text__edit-of-block">Добавить еще<div class="add-something"></div></a>
+                    <input class="btn form__btn-pos_skills btn_margin-bottom" type="submit" value="Отправить" form="edit-prf">
                 </main>
             </article>
         </div>
-        </main>
-
-        <script src="js/script.js"></script>
+        <div class="bgr" id="open-modal_rate">
+            <article class="rate-project">
+                <form class="form form__rate-project" id="rate-project" enctype="multipart/form-data" method="post" action="#">
+                    <p class="text__name-of-block">Оцените проект по 7-ми балльной шкале:</p>
+                    <input class="range" type="range" max="7" step=1 value=3>
+                    <span class="text__edit-of-block text_left">Оценка проекта влияет на средний рейтинг проектов пользователя</span>
+                    <p class="text__name-of-block text_left">Оцените опыт, приобретенный в областях знаний, использовавшихся в проекте ()по шкале 3 балла???:</p>
+                    <div class="center">
+                        <label class="field-label form-items">
+                            <div class="form__quation_rate">Программирование:</div>
+                            <select name="skills__experience_program">
+                                <option value="s1">1</option>
+                                <option value="s2">2</option>
+                                <option value="s3">3</option>
+                            </select>
+                            <!--<input class="field field_rate" type="text" name="mark_N1" placeholder="">-->
+                        </label>
+                    </div>
+                    <div class="center">
+                        <label class="field-label form-items">
+                            <div class="form__quation_rate">3D Animation:</div>
+                            <select name="skills__experience_3D">
+                                <option value="s1">1</option>
+                                <option value="s2">2</option>
+                                <option value="s3">3</option>
+                            </select>
+                            <!--<input class="field field_rate" type="text" name="mark_N2" placeholder="">-->
+                        </label>
+                    </div>
+                    <input class="btn form__btn-pos_skills btn_margin-bottom" type="submit" value="Оценить" form="rate-project">
+                </form>
+            </article>
+        </div>
+        <div class="bgr" id="open-modal_new-skill">
+            <article class="rate-project">
+                <a href="#close" title="Close" class="close close__position"></a>
+                <header class="name-of-modal__header">
+                    <div class="text__profile-edit-nav">Добавление нового навыка</div>
+                </header>
+                <form class="form form__rate-project" id="new-skill" enctype="multipart/form-data" method="post" action="#">
+                    <p class="text__name-of-block">Выберите навык, который хотите добавить:</p>
+                    <select name="projects__new-skill" class="form__new-skills">
+                        <option value="s1">Визуализация процессов</option>
+                        <option value="s2">Софт скиллс</option>
+                        <option value="s3">Алгоримы построения БД</option>
+                    </select>
+                    <span class="text text_color text_left">Методика оценивания ваших знаний:</span>
+                    <p class="text__name-of-block text_left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lobortis ut mi orci odio. Libero et convallis urna, quisque mauris duis blandit mattis dui.</p>
+                    <p class="text text_color text_left">Оцените владение навыком по 7-ми балльной шкале:</p>
+                    <input class="range" type="range" max="7" step=1 value=3>
+                    <input class="btn form__btn-pos_skills btn_margin-bottom" type="submit" value="Оценить" form="new-skill">
+                </form>
+            </article>
+        </div>
+        <div class="bgr" id="open-modal_new-project">
+            <article class="rate-project">
+                <a href="#close" title="Close" class="close close__position"></a>
+                <header class="name-of-modal__header">
+                    <div class="text__profile-edit-nav text_right-space">Добавление нового проекта</div>
+                    <span class="text__part">Шаг 1 из 2</span>
+                    <span class="hidden text__part">Шаг 2 из 2</span>
+                </header>
+                <main class="add-new-project__part1">
+                    <form class="form form__rate-project" id="rate-project" enctype="multipart/form-data" method="post" action="#">
+                        <label class="field-label new-project__name-of-project">
+                            <div class="">Название проекта:</div>
+                            <input class="field" type="text" name="name" placeholder="">                            
+                        </label>
+                        <label class="field-label new-project__name-of-project">
+                            <div class="">Описание проекта:</div>
+                            <textarea class="field" placeholder="" name="description" rows="4"></textarea>
+                        </label>
+                        <div class="">Добавление фото:</div>
+                        <label class="field-label label-file add-new-project__adding-photo">
+                            <div class="">Загрузите изображения вашего проекта</div>
+                            <output id="list"></output>
+                            <input class="photo" type="file" accept="image/*" name="user-photo" id="files">
+                        </label>
+                        
+                            <div class="">Статус проекта:</div>
+                            <div class="field-label label-radio add-new-project__adding-photo">
+                                <label><input type="radio" name="project-status" value="type-of-projects__now">Текущий</label>
+                                <label><input type="radio" name="project-status" value="type-of-projects__finished">Прошедший</label>
+                                <label><input type="radio" name="project-status" value="type-of-projects__plan">Запланированный</label>
+                            </div>
+                        
+                        <div class="btn form__btn-pos_skills btn_margin-bottom">Далее</div>
+                        <!--<input class="btn form__btn-pos_skills btn_margin-bottom" type="submit" value="Оценить" form="rate-project">-->
+                    </form>
+                </main>
+            </article>
+        </div>
+        <script src="js/skill-list.js"></script>
         <script src="js/switch-boxs.js"></script>
         <script src="js/close-js.js"></script>
         <script src="js/input.js"></script>
+        <script src="js/modal.js"></script>
     </body>
 </html>

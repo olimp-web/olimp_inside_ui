@@ -28,6 +28,9 @@
   text-align: center;
   color: #000000; }
 
+.text_right-space {
+  margin-right: 25px; }
+
 .text {
   letter-spacing: 0.15px;
   font-family: 'Roboto', sans-serif;
@@ -46,6 +49,12 @@
   text-align: center;
   color: #303C42;
   text-align: left; }
+
+.text_color {
+  color: #303C42; }
+
+.text_left {
+  text-align: left !important; }
 
 .member-card__geo > p:first-child {
   font-family: 'Roboto', sans-serif;
@@ -116,6 +125,16 @@
   font-weight: 300;
   text-align: center;
   color: #303C42; }
+
+.text__part {
+  letter-spacing: 0.5px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-size: 12px;
+  font-weight: 300;
+  text-align: center;
+  color: #303C42;
+  line-height: 2.5; }
 
 .text__profile-edit-nav {
   font-family: 'Roboto', sans-serif;
@@ -491,6 +510,9 @@ template {
   .btn:hover {
     background: #29BF95; }
 
+.btn_margin-bottom {
+  margin-bottom: 10px; }
+
 .btn-link {
   background: transparent;
   color: #29BF95;
@@ -611,6 +633,9 @@ template {
     border-color: #25AE88;
     outline: none; }
 
+.field_rate {
+  width: auto; }
+
 .form__errors {
   color: #782626; }
   .form__errors > ul {
@@ -630,8 +655,19 @@ template {
   flex-direction: column;
   justify-content: flex-start; }
 
+.form__rate-project {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 100%; }
+
 .form__quation {
   width: 135px; }
+
+.form__quation_rate {
+  width: 160px;
+  display: block; }
 
 .field:focus ~ .field-label {
   color: #E7F0F0; }
@@ -640,9 +676,18 @@ template {
   position: absolute;
   bottom: -80px; }
 
+.form__btn-pos_skills {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-top: 40px; }
+
 .field-label {
   display: block;
   margin: 10px 0 8px; }
+
+.form__new-skills {
+  margin-bottom: 35px; }
 
 .action-row {
   display: flex;
@@ -651,10 +696,18 @@ template {
 
 .thumb {
   height: 75px;
-  margin: 10px 5px 0 0; }
+  margin: 10px 5px 0 0;
+  object-fit: contain;
+  width: 50px; }
 
 .label-file {
   align-items: center; }
+
+.photo {
+  width: 136px; }
+
+.form__quation_photo {
+  width: 100px; }
 
 .type-of-projects {
   height: 70px;
@@ -757,23 +810,62 @@ template {
   pointer-events: auto; }
 
 .main__left-edit {
-  flex-basis: 1px;
-  flex-grow: 1;
   box-sizing: border-box;
-  padding-right: 110px; }
+  padding-right: 10%;
+  flex: 1 100 420px; }
 
 .main__right-edit {
   position: relative;
-  flex-basis: 1px;
-  flex-grow: 1; }
+  flex: 1 1 420px; }
 
 .edit-profile__header {
   margin-bottom: 100px; }
 
-.main__profile-edit {
+.main__profile-edit_info {
   position: relative;
   display: flex;
   justify-content: center; }
+
+.main__profile-edit_skills {
+  position: relative;
+  display: block;
+  justify-content: center; }
+
+.main__profile-edit_projects {
+  position: relative;
+  display: block;
+  justify-content: center; }
+
+.rate-project {
+  position: relative;
+  box-sizing: border-box;
+  background-color: white;
+  padding: 6% 10%;
+  width: 70%;
+  height: 70vh;
+  overflow-y: auto; }
+  .rate-project .range {
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }
+
+.name-of-modal__header {
+  border-bottom: 1px solid rgba(56, 70, 77, 0.4);
+  margin-bottom: 40px;
+  padding-bottom: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start; }
+
+.add-new-project__adding-photo {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+
+.new-project__name-of-project {
+  width: 50%; }
 
 .header {
   height: 64px;
@@ -821,12 +913,13 @@ nav {
   border-bottom: 1px solid rgba(56, 70, 77, 0.4); }
 
 .nav__item_profile-edit {
+  position: relative;
   list-style-type: none;
   max-width: 260px;
   margin-right: 80px; }
 
-.nav__item_profile-edit {
-  position: relative; }
+.nav__item_profile-edit:hover {
+  cursor: pointer; }
 
 .nav__item_profile-edit_active::after {
   display: block;
@@ -1070,7 +1163,6 @@ hr {
 
 .block {
   width: 100%;
-  height: 300px;
   position: relative;
   margin-top: 90px;
   margin-bottom: 80px; }
@@ -1117,7 +1209,6 @@ hr {
   background-color: white; }
 
 .profile-main {
-  height: 300px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -1157,16 +1248,13 @@ hr {
 
 .profile-info__hobby {
   display: flex;
-  justify-content: space-between;
-  height: 40px;
-  margin-bottom: 20px; }
+  justify-content: space-between; }
 
 .profile-info__edu .pofile-info__type {
-  padding-top: 3px; }
+  margin-top: 20px; }
 
 .profile-info__hobby .pofile-info__type {
-  display: flex;
-  align-items: center; }
+  display: flex; }
 
 .pofile-info__tags {
   padding: 0;
@@ -1204,10 +1292,17 @@ hr {
   flex-grow: 6;
   background-color: #303C42; }
 
+.skill__level-line_edit {
+  width: 300px;
+  height: 6px; }
+
 .skill__level-line div {
   height: 45px;
   width: 70%;
   background-color: #25AE88; }
+
+.skill__level-line_edit div {
+  height: 6px; }
 
 .skill__level-line > p {
   position: absolute;

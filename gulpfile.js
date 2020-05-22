@@ -1,5 +1,6 @@
 const { src, dest, parallel, watch } = require('gulp');
 const sass = require('gulp-sass');
+const concat = require('gulp-concat');
 
 function build_css() {
     return src("src/scss/*.scss")
@@ -17,9 +18,16 @@ function build_fonts() {
         .pipe(dest("public/fonts/"))
 }
 
+function build_scripts() {
+    return src("src/js/*.js")
+        .pipe(concat('scripts.js'))
+        .pipe(dest("public/js"));
+}
+
 exports.build_css = build_css;
 exports.build_images = build_images;
+exports.build_scripts = build_scripts;
 exports.live = function() {
-    return watch(['src/'], {}, parallel(build_css, build_images, build_fonts));
+    return watch(['src/'], {}, parallel(build_css, build_images, build_fonts, build_scripts));
 };
-exports.default = parallel(build_css, build_images, build_fonts);
+exports.default = parallel(build_css, build_images, build_fonts, build_scripts);
