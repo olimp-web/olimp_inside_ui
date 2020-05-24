@@ -27,6 +27,15 @@
   font-stretch: normal;
 }
 
+@font-face {
+  font-family: 'AnonymousPro';
+  src: url("../fonts/AnonymousPro-Bold.ttf");
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+
 @mixin font($size,$weight,$color: #000000){
         font-family: 'Roboto', sans-serif;
         font-style: normal;
@@ -42,7 +51,15 @@
 .text_right-space{
   margin-right: 25px;
 }
-
+.text__skill-level{
+  letter-spacing: 0.75px;
+  font-family: 'AnonymousPro';
+  font-style: normal;
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  color: #303C42;
+}
 .text{
     letter-spacing: 0.15px;
     @include font(20px,normal,#FFFFFF);
@@ -98,6 +115,11 @@
 }
 h1, .h1{
   font-size: 24px;
+}
+
+.text__info-skill{
+  letter-spacing: 0.5px;
+  @include font(18px,300, #303C42);
 }
 
 h2, .h2{

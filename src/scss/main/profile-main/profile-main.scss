@@ -50,6 +50,7 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: stretch;
+    min-height: 325px;
 }
 .block-for-photo{
     display: flex;
@@ -81,7 +82,6 @@
 .profile-info__edu{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px;
 }
 .profile-info__hobby{
     display: flex;
@@ -89,9 +89,13 @@
 }
 .profile-info__edu .pofile-info__type{
     margin-top: 20px;
+    width: 130px;
+    text-align: left;
 }
 .profile-info__hobby .pofile-info__type{
     display: flex;
+    width: 130px;
+    text-align: left;
 }
 .pofile-info__tags{
     padding: 0;
@@ -101,8 +105,10 @@
     display:box;
 }
 .answer{
-    width: 75%;
     text-align: left;
+    margin-left: 40px;
+    margin-right: 40px;
+    width: 80%;
 }
 .profile-info__edu .answer{
     line-height: 28px;
