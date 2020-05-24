@@ -19,7 +19,7 @@ function build_fonts() {
 }
 
 function build_scripts() {
-    return src("src/js/*.js")
+    return src("js/*.js")
         .pipe(concat('scripts.js'))
         .pipe(dest("public/js"));
 }

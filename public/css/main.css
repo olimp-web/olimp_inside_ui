@@ -20,6 +20,13 @@
   font-style: normal;
   font-stretch: normal; }
 
+@font-face {
+  font-family: 'AnonymousPro';
+  src: url("../fonts/AnonymousPro-Bold.ttf");
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal; }
+
 .member-card__name {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
@@ -30,6 +37,15 @@
 
 .text_right-space {
   margin-right: 25px; }
+
+.text__skill-level {
+  letter-spacing: 0.75px;
+  font-family: 'AnonymousPro';
+  font-style: normal;
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  color: #303C42; }
 
 .text {
   letter-spacing: 0.15px;
@@ -146,6 +162,15 @@
 
 h1, .h1 {
   font-size: 24px; }
+
+.text__info-skill {
+  letter-spacing: 0.5px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  font-weight: 300;
+  text-align: center;
+  color: #303C42; }
 
 h2, .h2 {
   font-size: 20px; }
@@ -737,7 +762,7 @@ template {
   background-color: #265F78; }
 
 .finder {
-  background-image: url(../images/search.png);
+  background-image: url(../images/Search.png);
   background-repeat: no-repeat;
   background-size: 20px;
   background-position: 10px;
@@ -1212,7 +1237,8 @@ hr {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  align-items: stretch; }
+  align-items: stretch;
+  min-height: 325px; }
 
 .block-for-photo {
   display: flex;
@@ -1243,18 +1269,21 @@ hr {
 
 .profile-info__edu {
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 20px; }
+  justify-content: space-between; }
 
 .profile-info__hobby {
   display: flex;
   justify-content: space-between; }
 
 .profile-info__edu .pofile-info__type {
-  margin-top: 20px; }
+  margin-top: 20px;
+  width: 130px;
+  text-align: left; }
 
 .profile-info__hobby .pofile-info__type {
-  display: flex; }
+  display: flex;
+  width: 130px;
+  text-align: left; }
 
 .pofile-info__tags {
   padding: 0;
@@ -1266,8 +1295,10 @@ hr {
   display: box; }
 
 .answer {
-  width: 75%;
-  text-align: left; }
+  text-align: left;
+  margin-left: 40px;
+  margin-right: 40px;
+  width: 80%; }
 
 .profile-info__edu .answer {
   line-height: 28px; }
@@ -1281,8 +1312,7 @@ hr {
   align-items: center;
   height: 160px;
   background-color: #F4F3FE;
-  padding: 0 20px 0 0;
-  padding-left: 10px;
+  padding: 0 5% 0 3%;
   margin-bottom: 5px;
   position: relative; }
 
@@ -1312,7 +1342,8 @@ hr {
 .skill__level-number {
   flex-grow: 1;
   display: flex;
-  justify-content: center; }
+  justify-content: flex-end;
+  align-items: center; }
 
 .skill__info {
   width: 21px;
@@ -1325,14 +1356,17 @@ hr {
   position: relative; }
 
 .skill__anim {
-  flex-grow: 1; }
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end; }
 
 .skill__anim div {
   width: 45px;
   height: 45px;
+  background-size: 1500%;
   background-image: url("../images/icons.svg");
   background-repeat: no-repeat;
-  background-position: -340px -80px;
+  background-position: -538px -140px;
   -moz-transform: rotate(90deg);
   /* Для Firefox */
   -ms-transform: rotate(90deg);
@@ -1343,7 +1377,7 @@ hr {
   /* Для Opera */
   transform: rotate(90deg);
   transition: transform 0.5s;
-  transform-origin: 18px 24px; }
+  transform-origin: 23px 23px; }
 
 .skill .skill__anim_pic1-active {
   -moz-transform: rotate(270deg);
@@ -1497,31 +1531,29 @@ hr {
   margin-left: 10px; }
 
 .project {
-  width: 100%;
+  width: auto;
   height: 510px;
   background-color: white;
   display: flex;
   justify-content: center;
-  position: relative; }
+  align-items: center;
+  position: relative;
+  padding: 0 40px; }
 
 .project__photo {
-  flex-basis: 1px;
-  flex-grow: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center; }
-
-.project__photo img {
-  width: 500px; }
+  max-height: 410px;
+  max-width: 550px;
+  width: 43.5%; }
 
 .project__info {
+  height: 100%;
   flex-basis: 1px;
   flex-grow: 1;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: stretch;
-  padding: 0 10px 0 10px; }
+  padding: 0 0 0 65px; }
 
 .project__name-data {
   margin-top: 50px;
@@ -1557,6 +1589,9 @@ hr {
   right: 50px;
   bottom: 50px;
   font-weight: 500; }
+
+.project__hide:hover {
+  cursor: pointer; }
 
 .project__hide div {
   width: 20px;

@@ -1,9 +1,7 @@
-for(let i = 1; i < 6; i++) {
-        let close = document.getElementById('tag__' + i + '-close');
-        console.log(i);
-        close.addEventListener('click', function() {
-            const parent = close.parentNode;
-            console.log('!');
+let  close = document.getElementsByClassName('tag_profile__close');
+for(let i = 0; i < close.length; i++) {
+        close[i].addEventListener('click', function() {
+            const parent = close[i].parentNode;
             if(parent.classList.contains('hidden')) {
                 parent.classList.remove('hidden');
             } else { 
