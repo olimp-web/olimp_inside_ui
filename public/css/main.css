@@ -1377,7 +1377,7 @@ hr {
   /* Для Opera */
   transform: rotate(90deg);
   transition: transform 0.5s;
-  transform-origin: 23px 23px; }
+  transform-origin: 22px 23px; }
 
 .skill .skill__anim_pic1-active {
   -moz-transform: rotate(270deg);
